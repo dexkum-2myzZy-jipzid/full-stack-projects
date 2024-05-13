@@ -1,0 +1,137 @@
+.sidebar {
+  padding: 0rem 1rem;
+  gap: 1rem;
+}
+
+/* sidebar-button */
+.sidebar-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #f7eedd;
+  border-radius: 0.5rem;
+  color: #2c2c2c;
+  text-decoration: none;
+}
+
+.sidebar-button:hover {
+  background-color: #ffd299;
+  color: #2c2c2c;
+}
+
+.sidebar-button.active {
+  background-color: #ff7f50;
+}
+
+/* icons */
+.icon {
+  margin-right: 1rem;
+}
+/* home icon */
+.gg-home-alt {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 18px;
+  height: 14px;
+  border: 2px solid;
+  border-top: 0;
+  border-radius: 2px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  margin-bottom: -2px;
+}
+
+.gg-home-alt::after,
+.gg-home-alt::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+}
+
+.gg-home-alt::before {
+  border-top: 2px solid;
+  border-left: 2px solid;
+  border-top-left-radius: 4px;
+  transform: rotate(45deg);
+  top: -5px;
+  border-radius: 3px;
+  width: 14px;
+  height: 14px;
+  left: 0;
+}
+
+.gg-home-alt::after {
+  width: 6px;
+  height: 10px;
+  background: currentColor;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  left: 4px;
+  bottom: -2px;
+}
+
+/* profile icon */
+.gg-profile,
+.gg-profile::after,
+.gg-profile::before {
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid;
+  border-radius: 100px;
+}
+
+.gg-profile {
+  overflow: hidden;
+  transform: scale(var(--ggs, 1));
+  width: 22px;
+  height: 22px;
+  position: relative;
+}
+
+.gg-profile::after,
+.gg-profile::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  width: 8px;
+  height: 8px;
+}
+
+.gg-profile::after {
+  border-radius: 200px;
+  top: 11px;
+  left: 0px;
+  width: 18px;
+  height: 18px;
+}
+
+/* logout icon */
+.gg-log-off {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  border-radius: 16px;
+  border: 2px solid;
+  transform: scale(var(--ggs, 1));
+  width: 16px;
+  height: 16px;
+  border-top: 2px solid transparent;
+}
+
+.gg-log-off::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  border-radius: 3px;
+  height: 8px;
+  width: 2px;
+  background: currentColor;
+  left: 5px;
+  bottom: 6px;
+}
